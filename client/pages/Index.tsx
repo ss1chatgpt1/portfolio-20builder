@@ -230,9 +230,9 @@ export default function Index() {
                 
                 {/* CTA Buttons */}
                 <div className="flex flex-col sm:flex-row gap-4" data-magnetic>
-                  <Button 
-                    size="lg" 
-                    className="group bg-gradient-to-r from-primary via-purple-500 to-cyan-500 hover:from-primary/90 hover:via-purple-500/90 hover:to-cyan-500/90 shadow-large transition-all duration-500 hover:shadow-xl hover:scale-105 backdrop-blur-sm"
+                  <Button
+                    size="lg"
+                    className="group bg-gradient-to-r from-primary via-purple-500 to-cyan-500 hover:from-primary/90 hover:via-purple-500/90 hover:to-cyan-500/90 shadow-large transition-all duration-500 hover:shadow-xl hover:scale-105 backdrop-blur-sm magnetic-button"
                     onClick={() => handleNavClick('#contact')}
                   >
                     <Mail className="w-4 h-4 mr-2" />
