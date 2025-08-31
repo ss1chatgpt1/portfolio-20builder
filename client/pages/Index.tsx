@@ -732,12 +732,12 @@ export default function Index() {
               </div>
               
               <div className="flex justify-center gap-6">
-                <Button variant="ghost" size="sm" className="group backdrop-blur-sm" data-magnetic>
+                <Button variant="ghost" size="sm" className="group backdrop-blur-sm magnetic-button" data-magnetic>
                   <Github className="w-4 h-4 mr-2" />
                   GitHub
                   <ArrowUpRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Button>
-                <Button variant="ghost" size="sm" className="group backdrop-blur-sm" data-magnetic>
+                <Button variant="ghost" size="sm" className="group backdrop-blur-sm magnetic-button" data-magnetic>
                   <Linkedin className="w-4 h-4 mr-2" />
                   LinkedIn
                   <ArrowUpRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
