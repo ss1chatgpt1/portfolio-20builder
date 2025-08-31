@@ -711,9 +711,9 @@ export default function Index() {
               </AnimatedText>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-                <Button 
-                  size="lg" 
-                  className="group bg-gradient-to-r from-primary via-purple-500 to-cyan-500 hover:from-primary/90 hover:via-purple-500/90 hover:to-cyan-500/90 shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-105 backdrop-blur-sm"
+                <Button
+                  size="lg"
+                  className="group bg-gradient-to-r from-primary via-purple-500 to-cyan-500 hover:from-primary/90 hover:via-purple-500/90 hover:to-cyan-500/90 shadow-2xl transition-all duration-500 hover:shadow-3xl hover:scale-105 backdrop-blur-sm magnetic-button"
                   data-magnetic
                 >
                   <Mail className="w-5 h-5 mr-3" />
