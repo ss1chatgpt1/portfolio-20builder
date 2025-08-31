@@ -473,7 +473,7 @@ export default function Index() {
               </AnimatedText>
             </div>
             
-            <Card className="p-8 border-0 shadow-2xl bg-gradient-to-br from-card via-card to-accent/5 backdrop-blur-sm border border-border/20 hover:shadow-3xl transition-all duration-500" data-magnetic>
+            <Card className="p-8 border-0 shadow-2xl bg-gradient-to-br from-card via-card to-accent/5 backdrop-blur-sm border border-border/20 hover:shadow-3xl transition-all duration-500">
               <div className="grid md:grid-cols-3 gap-8">
                 {/* Company info */}
                 <div className="space-y-6">
