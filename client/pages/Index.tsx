@@ -720,10 +720,10 @@ export default function Index() {
                   saumilshah321@gmail.com
                   <ChevronRight className="w-4 h-4 ml-3 group-hover:translate-x-1 transition-transform" />
                 </Button>
-                <Button 
-                  variant="outline" 
+                <Button
+                  variant="outline"
                   size="lg"
-                  className="group border-2 border-border/50 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm hover:bg-accent/20"
+                  className="group border-2 border-border/50 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm hover:bg-accent/20 magnetic-button"
                   data-magnetic
                 >
                   <span className="mr-2">📞</span>
