@@ -41,6 +41,9 @@ importers:
       lottie-react:
         specifier: ^2.4.1
         version: 2.4.1(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
+      postprocessing:
+        specifier: ^6.37.7
+        version: 6.37.7(three@0.176.0)
       react-hotkeys-hook:
         specifier: ^5.1.0
         version: 5.1.0(react-dom@18.3.1(react@18.3.1))(react@18.3.1)
