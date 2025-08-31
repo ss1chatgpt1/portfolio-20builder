@@ -73,10 +73,15 @@ export function MagneticCursor() {
           const rect = el.getBoundingClientRect();
           const x = e.clientX - rect.left - rect.width / 2;
           const y = e.clientY - rect.top - rect.height / 2;
-          
-          // Apply magnetic pull
-          const strength = 0.3;
-          el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+
+          // Apply magnetic pull only to small interactive elements
+          const isSmallElement = rect.width < 300 && rect.height < 200;
+          const strength = isSmallElement ? 0.15 : 0.05;
+
+          // Only apply strong magnetic effect to buttons and small elements
+          if (el.tagName === 'BUTTON' || el.classList.contains('magnetic-button') || isSmallElement) {
+            el.style.transform = `translate(${x * strength}px, ${y * strength}px)`;
+          }
         });
         
         el.addEventListener('mouseleave', () => {
