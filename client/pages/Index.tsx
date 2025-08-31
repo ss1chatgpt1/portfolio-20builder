@@ -416,7 +416,7 @@ export default function Index() {
                     color: "from-orange-500 to-red-500"
                   }
                 ].map((item, index) => (
-                  <div key={index} className="relative pl-20 group" data-magnetic>
+                  <div key={index} className="relative pl-20 group">
                     <div className="absolute left-6 w-4 h-4 rounded-full border-4 border-background shadow-large z-10">
                       <div className={`w-full h-full bg-gradient-to-r ${item.color} rounded-full animate-pulse`} />
                     </div>
