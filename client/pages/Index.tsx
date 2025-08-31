@@ -123,8 +123,6 @@ export default function Index() {
       {loading && <LoadingSequence onComplete={handleLoadingComplete} />}
       
       <div className="min-h-screen bg-background relative overflow-x-hidden">
-        {/* Custom Cursor */}
-        <MagneticCursor />
         
         {/* Premium Navigation */}
         <nav 
