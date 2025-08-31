@@ -10,7 +10,6 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
 // Premium Components
 import { HeroScene } from '@/components/3d/HeroScene';
-import { MagneticCursor } from '@/components/effects/MagneticCursor';
 import { AnimatedText } from '@/components/effects/AnimatedText';
 import { LoadingSequence } from '@/components/effects/LoadingSequence';
 import { useSmoothScroll } from '@/hooks/useSmoothScroll';
