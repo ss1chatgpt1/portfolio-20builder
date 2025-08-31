@@ -668,12 +668,12 @@ export default function Index() {
                     </div>
                     
                     <div className="flex gap-3 pt-4">
-                      <Button variant="outline" size="sm" className="group backdrop-blur-sm" data-magnetic>
+                      <Button variant="outline" size="sm" className="group backdrop-blur-sm magnetic-button" data-magnetic>
                         <Github className="w-4 h-4 mr-2" />
                         View Code
                         <ArrowUpRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                       </Button>
-                      <Button variant="outline" size="sm" className="group backdrop-blur-sm" data-magnetic>
+                      <Button variant="outline" size="sm" className="group backdrop-blur-sm magnetic-button" data-magnetic>
                         <ExternalLink className="w-4 h-4 mr-2" />
                         Live Demo
                         <ArrowUpRight className="w-3 h-3 ml-1 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
