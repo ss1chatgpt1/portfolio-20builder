@@ -265,20 +265,67 @@ export default function Index() {
                 </div>
               </animated.div>
               
-              {/* Right side - Metrics card */}
-              <animated.div 
+              {/* Right side - Photo and Info */}
+              <animated.div
                 style={heroSpring}
-                className="relative"
+                className="relative space-y-6"
               >
-                <Card className="relative p-8 border-0 shadow-2xl bg-card/80 backdrop-blur-xl border border-border/20 hover:shadow-3xl transition-all duration-500">
-                  <div className="space-y-6">
-                    <div className="flex items-center gap-3 mb-6">
+                {/* Professional Photo Section */}
+                <Card className="relative border-0 shadow-2xl bg-card/80 backdrop-blur-xl border border-border/20 hover:shadow-3xl transition-all duration-500 overflow-hidden">
+                  <div className="relative">
+                    {/* Photo placeholder - you can replace with actual photo */}
+                    <div className="aspect-square bg-gradient-to-br from-primary/20 via-purple-500/20 to-cyan-500/20 flex items-center justify-center relative overflow-hidden">
+                      <div className="absolute inset-0 bg-gradient-to-br from-primary/10 to-transparent" />
+                      <div className="relative z-10 text-center">
+                        <div className="w-32 h-32 mx-auto bg-gradient-to-br from-primary via-purple-500 to-cyan-500 rounded-full flex items-center justify-center shadow-2xl mb-4">
+                          <span className="text-4xl font-bold text-white">S</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">Professional Photo</p>
+                        <p className="text-xs text-muted-foreground/60">Upload your photo here</p>
+                      </div>
+
+                      {/* Floating particles for visual appeal */}
+                      <div className="absolute inset-0">
+                        {[...Array(20)].map((_, i) => (
+                          <div
+                            key={i}
+                            className="absolute w-1 h-1 bg-primary/20 rounded-full animate-pulse"
+                            style={{
+                              left: `${Math.random() * 100}%`,
+                              top: `${Math.random() * 100}%`,
+                              animationDelay: `${Math.random() * 2}s`,
+                              animationDuration: `${2 + Math.random() * 2}s`,
+                            }}
+                          />
+                        ))}
+                      </div>
+                    </div>
+
+                    {/* Quick quote overlay */}
+                    <div className="absolute bottom-4 left-4 right-4">
+                      <div className="bg-background/80 backdrop-blur-sm rounded-lg p-3 border border-border/20">
+                        <AnimatedText
+                          animation="typewriter"
+                          className="text-xs text-muted-foreground italic text-center"
+                          delay={3}
+                        >
+                          "Bridging chemical engineering and AI"
+                        </AnimatedText>
+                      </div>
+                    </div>
+                  </div>
+                </Card>
+
+                {/* Metrics Section - Separate Card */}
+                <Card className="relative p-6 border-0 shadow-xl bg-card/80 backdrop-blur-xl border border-border/20 hover:shadow-2xl transition-all duration-500">
+                  <div className="space-y-4">
+                    <div className="flex items-center gap-3 mb-4">
                       <div className="w-3 h-3 bg-gradient-to-r from-primary to-purple-500 rounded-full animate-pulse" />
                       <span className="text-sm font-medium text-muted-foreground">Current Impact</span>
                     </div>
-                    
+
                     {/* Achievement metrics */}
-                    <div className="grid grid-cols-2 gap-4">
+                    <div className="grid grid-cols-2 gap-3">
                       {[
                         { value: '90%+', label: 'Efficiency Improvement' },
                         { value: '15-20%', label: 'Cost Savings' },
@@ -286,22 +333,12 @@ export default function Index() {
                         { value: '8.08', label: 'CGPA' },
                       ].map((metric, index) => (
                         <div key={index} className="text-center group">
-                          <div className="text-2xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-1 group-hover:scale-110 transition-transform">
+                          <div className="text-xl font-bold bg-gradient-to-r from-primary to-purple-500 bg-clip-text text-transparent mb-1 group-hover:scale-110 transition-transform">
                             {metric.value}
                           </div>
                           <div className="text-xs text-muted-foreground">{metric.label}</div>
                         </div>
                       ))}
-                    </div>
-                    
-                    <div className="pt-4 border-t border-border/20">
-                      <AnimatedText
-                        animation="typewriter"
-                        className="text-sm text-muted-foreground italic text-center"
-                        delay={3}
-                      >
-                        "Bridging the gap between chemical engineering and AI"
-                      </AnimatedText>
                     </div>
                   </div>
                 </Card>
