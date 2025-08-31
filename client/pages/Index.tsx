@@ -239,10 +239,10 @@ export default function Index() {
                     Start a conversation
                     <ChevronRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                   </Button>
-                  <Button 
-                    variant="outline" 
-                    size="lg" 
-                    className="group border-2 border-border/50 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm hover:bg-accent/20"
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="group border-2 border-border/50 hover:border-primary/50 transition-all duration-300 backdrop-blur-sm hover:bg-accent/20 magnetic-button"
                     data-magnetic
                   >
                     <Download className="w-4 h-4 mr-2" />
