@@ -533,7 +533,7 @@ export default function Index() {
                         color: "from-orange-500 to-red-500"
                       }
                     ].map((item, index) => (
-                      <Card key={index} className="p-4 border-0 bg-accent/10 hover:bg-accent/20 transition-all duration-300 backdrop-blur-sm group" data-magnetic>
+                      <Card key={index} className="p-4 border-0 bg-accent/10 hover:bg-accent/20 transition-all duration-300 backdrop-blur-sm group">
                         <div className={`text-2xl font-bold bg-gradient-to-r ${item.color} bg-clip-text text-transparent mb-1 group-hover:scale-110 transition-transform`}>
                           {item.metric}
                         </div>
