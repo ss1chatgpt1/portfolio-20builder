@@ -577,7 +577,7 @@ export default function Index() {
               </AnimatedText>
             </div>
             
-            <Card className="overflow-hidden border-0 shadow-2xl bg-gradient-to-br from-card to-primary/5 backdrop-blur-sm border border-border/20 hover:shadow-3xl transition-all duration-500" data-magnetic>
+            <Card className="overflow-hidden border-0 shadow-2xl bg-gradient-to-br from-card to-primary/5 backdrop-blur-sm border border-border/20 hover:shadow-3xl transition-all duration-500">
               <div className="grid lg:grid-cols-5 gap-0">
                 {/* Visual impact area */}
                 <div className="lg:col-span-2 bg-gradient-to-br from-primary/10 via-purple-500/10 to-cyan-500/10 p-8 flex items-center justify-center relative overflow-hidden">
